@@ -1,0 +1,3 @@
+// Active: 1775581223186@@db_brian@null@sample_mflix
+db("sample_mflix").collection("movies").count({ 
+    countDocuments( genres "Comedy" )});

@@ -1,0 +1,11 @@
+// Active: 1775581223186@@db_brian@null@sample_mflix
+17 6 5
+Buscar filmes entre 1990 e 2000
+Mostrar quantidade de gêneros por filme ($size)
+Top 5 diretores com mais filmes
+
+Bonus
+13 17 7
+Contar filmes de "Comedy"
+Filmes com mais de 2 diretores
+Contar comentários por filme ($lookup)

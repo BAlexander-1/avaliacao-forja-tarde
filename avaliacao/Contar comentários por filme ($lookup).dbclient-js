@@ -1,0 +1,17 @@
+// Active: 1775581223186@@db_brian@null@sample_mflix
+db("sample_mflix").collection("comments").find([
+  {
+    $lookup: {
+      from: "comments",
+      localField: "_id",
+      foreignField: "movie_id",
+      as: "comments"
+    }
+  },
+  {
+    $project: {
+      title: 1,
+      totalComments: { $size: "$comments" },
+    },
+  },
+]);
